@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import Layout from './pages/admin/Layout';
+import Dashboard from './pages/admin/Dashboard';
+import AddBlog from './pages/admin/AddBlog';
+import ListBlog from './pages/admin/ListBlog';
+import Comments from './pages/admin/Comments';
+import 'quill/dist/quill.snow.css' 
+import Login from './components/admin/Login';
+import { Toaster } from 'react-hot-toast'
+import { useAppContext } from './context/AppContext';
 
-function App() {
-  const [count, setCount] = useState(0)
+
+const App = () => {
+  const { token } = useAppContext();
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Toaster/>
+      <Routes>
+       <Route path='/' element={<Home/>}/>
+       <Route path='/blog/:id' element={<Blog/>}/>
+       <Route path='/admin' element={token ? <Layout/> : <Login/>}>
+       <Route index element={<Dashboard/>}/>
+       <Route path='addBlog' element={<AddBlog/>} />
+       <Route path='listBlog' element={<ListBlog/>} />
+       <Route path='comments' element={<Comments/>} />
+       </Route>
+      </Routes>
+    </div>
   )
 }
 
