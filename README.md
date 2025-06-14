@@ -1,8 +1,3 @@
-Here's a professional and clear `README.md` for your **AI-powered blog project** that integrates **Gemini for blog writing** and includes an **admin panel**:
-
----
-
-````markdown
 # 🧠 Blogni — AI-Powered Blogging Platform
 
 **Blogni** is a modern AI-powered blogging platform that integrates **Gemini** (by Google) to generate blog content intelligently. It comes with a full-featured **admin panel** for managing posts, users, and content — perfect for developers, writers, or content teams looking to streamline publishing with the help of generative AI.
