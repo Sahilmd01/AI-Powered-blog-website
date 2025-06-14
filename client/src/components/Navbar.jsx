@@ -28,7 +28,7 @@ const Navbar = () => {
           <motion.a
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            href="https://yourportfolio.com"
+            href="https://sahilfullstackportfolio.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 sm:gap-2 rounded-full text-xs sm:text-sm font-medium cursor-pointer px-3 sm:px-6 py-2 transition-all duration-300 ease-in-out bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md"

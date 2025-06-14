@@ -1,0 +1,22 @@
+# Node.js dependencies
+server/node_modules/
+
+# Environment variables
+.env
+
+# Logs
+server/logs/
+server/npm-debug.log*
+server/yarn-debug.log*
+server/yarn-error.log*
+
+# OS/IDE-specific files
+server/.DS_Store
+server/.vscode/
+server/.idea/
+
+# Optional build or temp files
+server/dist/
+server/build/
+server/tmp/
+server/.cache/

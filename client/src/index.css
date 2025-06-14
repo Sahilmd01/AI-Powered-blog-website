@@ -12,14 +12,14 @@
 }
 
 @theme {
-  --primary-color: #27548A;
-  --secondary-color: #183b4e; 
-  --hover-color: #dda853;
-  --bg-color: #f3f3e0;
+  --primary-color: #0066FF;           /* Deep blue - primary brand color */
+  --secondary-color: #183b4e;         /* Dark navy - used for headers or dark accents */
+  --hover-color: #D46A6A;             /* Warm red - for hover effects or highlights #0066FF */
+  --bg-color: #f3f3e0;                /* Light cream - background color */
 
-  --primaryText: #e0e0e0;
- --primaryFont: 'Poppins', sans-serif;
-  --secondaryFont: 'Inter', sans-serif;
+  --primaryText: #e0e0e0;             /* Light gray - primary text on dark backgrounds */
+  --primaryFont: 'Poppins', sans-serif;     /* Main font for headings and emphasis */
+  --secondaryFont: 'Inter', sans-serif;     /* Secondary font for body and details */
 }
 
 .rich-text { font-size: 15px;  }
